@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Горизонтальное меню с скроллом</title>
+    <style>
+        /* Основные стили для контейнера меню */
+        .menu-container {
+            width: 100%;
+            overflow-x: auto;
+            white-space: nowrap;
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+
+        /* Стили для элементов меню */
+        .menu-item {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-right: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .menu-item:hover {
+            background-color: #45a049;
+        }
+
+        /* Скрытие скроллбара */
+        .menu-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .menu-container {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+</head>
+<body>
+
+<div class="menu-container">
+    <a href="#" class="menu-item">Главная</a>
+    <a href="#" class="menu-item">О нас</a>
+    <a href="#" class="menu-item">Услуги</a>
+    <a href="#" class="menu-item">Портфолио</a>
+    <a href="#" class="menu-item">Контакты</a>
+    <a href="#" class="menu-item">Блог</a>
+    <a href="#" class="menu-item">FAQ</a>
+    <a href="#" class="menu-item">Поддержка</a>
+    <a href="#" class="menu-item">Цены</a>
+    <a href="#" class="menu-item">Отзывы</a>
+</div>
+
+</body>
+</html>
